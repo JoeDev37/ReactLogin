@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "SUSE", sans-serif;
+  background-image: linear-gradient(-49deg, #232634 50%, #11111b 50%);
+  /* background: linear-gradient(-45deg, lightgreen 50%, darkgreen 20px);  */
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container {
+  width: 30%;
+  height: 70%;
+  /* background-color: #232634; */
+  background: 
+    /* radial-gradient(circle at top left, #087e64 30px, #05a115 30px),  */
+    radial-gradient(circle at bottom right, #11111b 100px, #1e1e2e 30px);
+  color: #c6d0f5;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(17, 17, 27, 1);
+  text-align: center;
+}
+
+.Container > h1 {
+  margin-bottom: 0;
+}
+
+hr {
+  height: 5px;
+  width: 70%;
+  border-radius: 10px;
+  background-color: #c6d0f5;
+  border: none;
+  margin-top: 0;
+  animation: animate 2s infinite;
+}
+
+@keyframes animate {
+  0%, 100% {
+    width: 30%;
+    background-color: #11111b;
+  }
+  50% {
+    width: 90%;
+    opacity: 0;
+  }
+}
+
+.ChildDiv {
+  /* background-color: red; */
+  width: 100%;
+  height: 70%;
+  margin-top: 30px;
+}
+
+#usrName,
+#usrPass {
+  padding: 10px 20px;
+  outline: none;
+  margin: 10px;
+  font-family: "SUSE", sans-serif;
+  background-color: #11111b;
+  border: none;
+  border-radius: 10px;
+  color: #c6d0f5;
+}
+
+#usrName::placeholder {
+  color: #c6d0f5;
+}
+
+#usrPass::placeholder {
+  color: #c6d0f5;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #11111b;
+  color: #c6d0f5;
+  box-shadow: 5px 5px 5px rgba(17, 17, 27, 1);
+  cursor: pointer;
+  font-family: "SUSE", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #c6d0f5;
+}
